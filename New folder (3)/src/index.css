@@ -1,0 +1,841 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 0%;
+
+    --radius: 0.375rem;
+
+    --shadow-soft: 0 2px 8px -2px rgba(0, 0, 0, 0.1), 0 4px 16px -4px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 4px 12px -2px rgba(0, 0, 0, 0.1), 0 8px 24px -4px rgba(0, 0, 0, 0.1);
+    --chart-1: 0 0% 0%;
+    --chart-2: 0 0% 20%;
+    --chart-3: 0 0% 40%;
+    --chart-4: 0 0% 60%;
+    --chart-5: 0 0% 80%;
+    --sidebar: 0 0% 100%;
+    --sidebar-foreground: 0 0% 0%;
+    --sidebar-primary: 0 0% 0%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 96%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 0 0% 0%;
+    --font-sans: 'Inter', system-ui, sans-serif;
+    --shadow-2xs: 0 1px 3px 0px rgba(0, 0, 0, 0.05);
+    --shadow-xs: 0 1px 3px 0px rgba(0, 0, 0, 0.05);
+    --shadow-sm: 0 1px 3px 0px rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 1px 3px 0px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 1px 3px 0px rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 1px 3px 0px rgba(0, 0, 0, 0.1), 0 8px 10px -1px rgba(0, 0, 0, 0.1);
+    --shadow-2xl: 0 1px 3px 0px rgba(0, 0, 0, 0.25);
+    --tracking-normal: 0em;
+    --spacing: 0.25rem;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 0 0% 20%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 100%;
+
+    --chart-1: 0 0% 100%;
+    --chart-2: 0 0% 80%;
+    --chart-3: 0 0% 60%;
+    --chart-4: 0 0% 40%;
+    --chart-5: 0 0% 20%;
+    --sidebar: 0 0% 10%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 0 0% 100%;
+    --radius: 0rem;
+    --shadow-2xs: 0 1px 3px 0px rgba(0, 0, 0, 0.05);
+    --shadow-xs: 0 1px 3px 0px rgba(0, 0, 0, 0.05);
+    --shadow-sm: 0 1px 3px 0px rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 1px 3px 0px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 1px 3px 0px rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 1px 3px 0px rgba(0, 0, 0, 0.1), 0 8px 10px -1px rgba(0, 0, 0, 0.1);
+    --shadow-2xl: 0 1px 3px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* REQUESTED: One font, same size for all text */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  div,
+  a,
+  li,
+  button,
+  input,
+  textarea,
+  label,
+  select {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 16px !important;
+    /* Explicit px as 1rem can vary */
+    line-height: 1.5;
+  }
+
+  /* Keep semantic bolding */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 600;
+  }
+
+  .unified-typography {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 16px !important;
+  }
+}
+
+@layer utilities {
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+
+  .spinning {
+    @apply animate-spin;
+  }
+
+  /* Animation utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.3s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.4s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Smooth transitions */
+  .transition-smooth {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  /* Hover effects */
+  .hover-lift {
+    @apply transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-lg;
+  }
+
+  /* Scrollbar hide */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer components {
+
+  /* ============================================
+     SHOP CONTAINER & LAYOUT
+     ============================================ */
+  .shop-container {
+    @apply min-h-screen bg-background flex justify-center;
+  }
+
+  .shop-card {
+    @apply w-full max-w-[480px] min-h-screen bg-card shadow-medium;
+  }
+
+  .shop-loading {
+    @apply flex flex-col items-center justify-center gap-4;
+  }
+
+  .shop-loading-spinner {
+    @apply w-8 h-8 animate-spin text-primary;
+  }
+
+  .shop-loading-text {
+    @apply text-muted-foreground;
+  }
+
+  .shop-header {
+    @apply sticky top-0 z-20 bg-card border-b border-border p-4;
+  }
+
+  .shop-header-content {
+    @apply flex items-center gap-2;
+  }
+
+  .shop-mode-toggle {
+    @apply flex gap-2 flex-1;
+  }
+
+  .shop-mode-button {
+    @apply flex-1 gap-2;
+  }
+
+  .shop-mode-icon {
+    @apply w-4 h-4;
+  }
+
+  .shop-mode-icon-right {
+    @apply w-4 h-4 ml-1;
+  }
+
+  /* ============================================
+     SELLER DASHBOARD
+     ============================================ */
+  .seller-dashboard {
+    @apply p-4 space-y-6 animate-fade-in pb-8;
+  }
+
+  .seller-save-section {
+    @apply sticky top-[73px] z-10 bg-card py-3 -mx-4 px-4 border-b border-border;
+  }
+
+  .seller-save-button {
+    @apply w-full gap-2;
+  }
+
+  .seller-save-icon {
+    @apply w-4 h-4;
+  }
+
+  .seller-unsaved-text {
+    @apply text-xs text-amber-600 text-center mt-2;
+  }
+
+  /* ============================================
+     FORM SECTIONS
+     ============================================ */
+  .form-section {
+    @apply bg-card rounded-lg p-5 shadow-soft border border-border;
+  }
+
+  .form-title {
+    @apply text-lg font-semibold text-foreground mb-4 flex items-center gap-2;
+  }
+
+  .form-title-icon {
+    @apply w-5 h-5 text-primary;
+  }
+
+  .form-fields {
+    @apply space-y-4;
+  }
+
+  .form-input {
+    @apply mt-1.5;
+  }
+
+  .form-hint {
+    @apply text-xs text-muted-foreground mt-1;
+  }
+
+  .form-button-full {
+    @apply w-full gap-2;
+  }
+
+  .form-button-icon {
+    @apply w-4 h-4;
+  }
+
+  /* ============================================
+     SERVICE LIST
+     ============================================ */
+  .service-list {
+    @apply mt-4 space-y-2 max-h-64 overflow-y-auto;
+  }
+
+  .service-list-item {
+    @apply flex items-center gap-3 p-3 bg-muted rounded-lg;
+  }
+
+  .service-list-item-content {
+    @apply flex-1 min-w-0;
+  }
+
+  .service-list-item-title {
+    @apply font-medium text-foreground text-sm truncate;
+  }
+
+  .service-list-item-desc {
+    @apply text-xs text-muted-foreground truncate;
+  }
+
+  .service-list-item-delete {
+    @apply text-muted-foreground hover:text-destructive flex-shrink-0;
+  }
+
+  .service-list-delete-icon {
+    @apply w-4 h-4;
+  }
+
+  /* ============================================
+     GALLERY GRID
+     ============================================ */
+  .gallery-grid {
+    @apply mt-4 grid grid-cols-4 gap-2;
+  }
+
+  .gallery-grid-item {
+    @apply relative aspect-square;
+  }
+
+  .gallery-grid-image {
+    @apply w-full h-full object-cover rounded-md;
+  }
+
+  .gallery-grid-delete {
+    @apply absolute -top-1 -right-1 w-5 h-5 bg-destructive text-destructive-foreground rounded-full flex items-center justify-center text-xs;
+  }
+
+  /* ============================================
+     BUYER CATALOG
+     ============================================ */
+  .buyer-catalog {
+    @apply animate-fade-in;
+  }
+
+  .buyer-footer {
+    @apply p-4 border-t border-border text-center mt-6;
+  }
+
+  .buyer-footer-text {
+    @apply text-xs text-muted-foreground flex items-center justify-center gap-1;
+  }
+
+  .buyer-footer-icon {
+    @apply w-3 h-3;
+  }
+
+  /* ============================================
+     AUTH PAGE
+     ============================================ */
+  .auth-page {
+    @apply min-h-screen bg-background flex items-center justify-center p-4;
+  }
+
+  .auth-container {
+    @apply w-full max-w-md space-y-4;
+  }
+
+  .auth-loading {
+    @apply flex items-center justify-center;
+  }
+
+  .auth-loading-spinner {
+    @apply w-8 h-8 animate-spin text-primary;
+  }
+
+  .auth-back-button {
+    @apply gap-2;
+  }
+
+  .auth-card {
+    @apply shadow-medium;
+  }
+
+  .auth-card-header {
+    @apply text-center space-y-4;
+  }
+
+  .auth-logo {
+    @apply w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto;
+  }
+
+  .auth-logo-icon {
+    @apply w-8 h-8 text-primary;
+  }
+
+  .auth-card-title {
+    @apply text-2xl;
+  }
+
+  .auth-card-description {
+    @apply text-muted-foreground;
+  }
+
+  .auth-form {
+    @apply space-y-4;
+  }
+
+  .auth-alert {
+    @apply mb-4;
+  }
+
+  .auth-form-field {
+    @apply space-y-2;
+  }
+
+  .auth-label {
+    @apply text-sm font-medium;
+  }
+
+  .auth-input-wrapper {
+    @apply relative;
+  }
+
+  .auth-input-icon {
+    @apply absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground;
+  }
+
+  .auth-input {
+    @apply pl-10;
+  }
+
+  .auth-error-text {
+    @apply text-xs text-destructive;
+  }
+
+  .auth-submit-button {
+    @apply w-full gap-2;
+  }
+
+  .auth-button-spinner {
+    @apply w-4 h-4 animate-spin;
+  }
+
+  .auth-toggle {
+    @apply mt-6 text-center;
+  }
+
+  .auth-toggle-text {
+    @apply text-sm text-muted-foreground;
+  }
+
+  .auth-toggle-button {
+    @apply p-0 h-auto;
+  }
+
+  /* ============================================
+     USER MENU
+     ============================================ */
+  .user-menu-trigger {
+    @apply relative h-10 w-10 rounded-full;
+  }
+
+  .user-menu-avatar {
+    @apply h-8 w-8;
+  }
+
+  .user-menu-avatar-fallback {
+    @apply bg-primary text-primary-foreground text-sm font-medium;
+  }
+
+  .user-menu-content {
+    @apply w-56;
+  }
+
+  .user-menu-label {
+    @apply font-normal;
+  }
+
+  .user-menu-label-content {
+    @apply flex items-center gap-2;
+  }
+
+  .user-menu-label-icon {
+    @apply w-4 h-4 text-muted-foreground;
+  }
+
+  .user-menu-email {
+    @apply text-sm truncate;
+  }
+
+  .user-menu-item-logout {
+    @apply text-destructive focus:text-destructive;
+  }
+
+  .user-menu-item-icon {
+    @apply w-4 h-4 mr-2;
+  }
+
+  /* ============================================
+     SHOP STATS SECTION
+     ============================================ */
+  .shop-stats-container {
+    @apply flex justify-center gap-6 py-4 px-4 bg-gradient-to-r from-primary/5 via-transparent to-primary/5 border-y border-border animate-fade-in;
+  }
+
+  .stat-item {
+    @apply flex flex-col items-center animate-fade-in;
+  }
+
+  .stat-item:nth-child(1) {
+    animation-delay: 100ms;
+  }
+
+  .stat-item:nth-child(2) {
+    animation-delay: 200ms;
+  }
+
+  .stat-item:nth-child(3) {
+    animation-delay: 300ms;
+  }
+
+  .stat-icon-wrapper {
+    @apply w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mb-1;
+  }
+
+  .stat-icon {
+    @apply w-5 h-5 text-primary;
+  }
+
+  .stat-icon-filled {
+    @apply w-5 h-5 text-primary fill-primary;
+  }
+
+  .stat-value {
+    @apply text-lg font-bold text-foreground;
+  }
+
+  .stat-label {
+    @apply text-xs text-muted-foreground;
+  }
+
+  /* ============================================
+     ACTION BUTTONS
+     ============================================ */
+  .action-buttons-container {
+    @apply px-4 py-3 space-y-2 animate-fade-in;
+  }
+
+  .action-button-row {
+    @apply flex gap-2;
+  }
+
+  .action-button {
+    @apply flex-1 gap-2 transition-all duration-200 hover:scale-[1.02] hover:shadow-lg;
+  }
+
+  .action-button-success {
+    @apply flex-1 gap-2 bg-emerald-600 hover:bg-emerald-700 text-white transition-all duration-200 hover:scale-[1.02] hover:shadow-lg;
+  }
+
+  .action-button-outline {
+    @apply flex-1 gap-2 transition-all duration-200 hover:scale-[1.02];
+  }
+
+  /* ============================================
+     SHOP BANNER
+     ============================================ */
+  .shop-banner-container {
+    @apply relative w-full overflow-hidden bg-muted border-b border-border;
+  }
+
+  .shop-banner-aspect-template1 {
+    @apply aspect-[4/5] sm:aspect-[16/9];
+  }
+
+  .shop-banner-aspect-template2 {
+    @apply aspect-square sm:aspect-[4/3];
+  }
+
+  .shop-banner-aspect-template3 {
+    @apply aspect-[3/4] sm:aspect-video;
+  }
+
+  .shop-banner-media {
+    @apply w-full h-full object-cover animate-scale-in;
+  }
+
+  .shop-banner-content-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent flex flex-col items-center justify-end p-6 text-center;
+  }
+
+  .shop-logo-large {
+    @apply w-24 h-24 rounded-full border-4 border-background shadow-xl mb-4 object-cover bg-muted animate-scale-in;
+  }
+
+  .shop-logo-placeholder {
+    @apply w-24 h-24 rounded-full border-4 border-background shadow-xl mb-4 bg-muted flex items-center justify-center animate-scale-in;
+  }
+
+  .shop-name-title {
+    @apply text-2xl sm:text-3xl font-bold text-foreground animate-slide-up;
+  }
+
+  .shop-tagline {
+    @apply text-sm text-muted-foreground mt-1 animate-fade-in;
+  }
+
+  .shop-description {
+    @apply text-sm sm:text-base text-foreground/80 mt-3 text-center max-w-md animate-fade-in;
+  }
+
+  .shop-banner-placeholder-icon {
+    @apply w-16 h-16 text-muted-foreground/30;
+  }
+
+  .shop-logo-placeholder-icon {
+    @apply w-10 h-10 text-muted-foreground;
+  }
+
+  .shop-status-badge-container {
+    @apply mt-4;
+  }
+
+  /* ============================================
+     INSTALL APP BUTTON
+     ============================================ */
+  .install-app-container {
+    @apply fixed bottom-20 right-4 z-50 animate-fade-in sm:right-8 sm:bottom-24;
+  }
+
+  .install-app-button {
+    @apply shadow-lg hover:shadow-xl transition-all duration-300 bg-primary text-primary-foreground gap-2 rounded-full px-6 py-6 h-auto font-semibold;
+  }
+
+  /* ============================================
+     PRINT STYLES (PDF Generation)
+     ============================================ */
+  @media print {
+
+    /* Hide everything by default */
+    body * {
+      visibility: hidden;
+    }
+
+    /* Show only the products section */
+    .print-grid,
+    .print-grid * {
+      visibility: visible;
+    }
+
+    .print-grid {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+      gap: 20px !important;
+    }
+
+    /* Hide specific UI elements explicitly */
+    .no-print,
+    header,
+    nav,
+    footer,
+    .install-app-container,
+    .fixed {
+      display: none !important;
+    }
+
+    /* Ensure good contrast */
+    body {
+      background: white !important;
+      color: black !important;
+    }
+
+    .bg-card {
+      border: 1px solid #ddd !important;
+      box-shadow: none !important;
+    }
+  }
+
+  /* ============================================
+     SKELETON LOADING
+     ============================================ */
+  .skeleton-container {
+    @apply p-4 space-y-6 animate-pulse;
+  }
+
+  .skeleton-header {
+    @apply flex justify-between items-center;
+  }
+
+  .skeleton-header-buttons {
+    @apply flex gap-2;
+  }
+
+  .skeleton-button {
+    @apply h-10 w-24;
+  }
+
+  .skeleton-avatar {
+    @apply h-10 w-10 rounded-full;
+  }
+
+  .skeleton-banner {
+    @apply w-full aspect-[16/9] rounded-lg;
+  }
+
+  .skeleton-stats-row {
+    @apply flex gap-4 justify-center;
+  }
+
+  .skeleton-stat-box {
+    @apply h-16 w-20;
+  }
+
+  .skeleton-grid {
+    @apply grid grid-cols-2 gap-4;
+  }
+
+  .skeleton-card {
+    @apply h-32 w-full rounded-md;
+  }
+
+  .skeleton-list {
+    @apply space-y-3;
+  }
+
+  .skeleton-list-item {
+    @apply h-12 w-full rounded-md;
+  }
+
+  /* ============================================
+     SELLER TABS
+     ============================================ */
+  .seller-tabs-container {
+    @apply w-full;
+  }
+
+  .seller-tabs-list {
+    @apply grid w-full grid-cols-4 mb-4;
+  }
+
+  .seller-tab-trigger {
+    @apply text-xs;
+  }
+
+  .seller-tab-content {
+    @apply space-y-6 animate-fade-in;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

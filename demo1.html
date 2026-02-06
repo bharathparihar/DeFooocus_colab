@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Happy Frame Studios - Professional Wedding Photography</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2C5E5E", // Darker Teal for high contrast
+            "background-light": "#F2F9F7", // Very soft mint tint
+            "background-dark": "#0F172A",
+            "card-light": "#FFFFFF",
+            "card-dark": "#1E293B",
+            "accent-light": "#E8F4F1",
+          },
+          fontFamily: {
+            display: ["Playfair Display", "serif"],
+            sans: ["Inter", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "12px",
+            "xl": "20px",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .font-display {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body
+  class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 max-w-[430px] mx-auto min-h-screen shadow-2xl relative">
+  <header class="relative h-[280px] w-full overflow-hidden bg-black">
+    <img alt="Cinematic wedding footage" class="w-full h-full object-cover opacity-80"
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIBf493RV8NZY7Du3m3sf-2cUgPUsGaqs7AJ2CwGEqZe9D6jlyiHv_3wfjxCpDlpJJbnaR158k-91p-WO8TJI9Zz6-r7OOmcSlI3ISeHMGvaAV_ZJC-rMpxDMFjL1K6R23wn5ZrbKhZH3U5O_BmDmcH8Mw1D6m__erOH0a6zHiX2dx8Sqj1fVJNo56MLx1gqgEquPNTROFPYSkSq-cNYU4Ka5drInK-BbIUSjZEnGUlWwWvD1J3gpHrRmEanphI1B75TDNRLLZ44mS" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-center justify-center">
+      <button
+        class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 text-white">
+        <span class="material-icons-outlined text-4xl">play_arrow</span>
+      </button>
+    </div>
+    <div
+      class="absolute top-4 right-4 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-white text-xs font-medium border border-white/30">
+      EN <span class="material-icons-outlined text-xs align-middle">expand_more</span>
+    </div>
+  </header>
+  <section class="px-6 -mt-12 relative z-10">
+    <div
+      class="bg-card-light dark:bg-card-dark rounded-xl shadow-lg p-6 text-center border border-accent-light dark:border-slate-700">
+      <div
+        class="w-24 h-24 bg-white rounded-full mx-auto -mt-16 border-4 border-background-light dark:border-background-dark flex items-center justify-center overflow-hidden shadow-md">
+        <div class="text-primary font-display text-2xl font-bold italic leading-tight">
+          hf<br /><span class="text-[10px] tracking-widest font-sans uppercase">Studios</span>
+        </div>
+      </div>
+      <h1 class="mt-4 text-xl font-bold font-display text-primary dark:text-teal-400">HAPPY FRAME STUDIOS</h1>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Owned By Ranbir Dhaliwal</p>
+      <p class="mt-5 text-sm text-slate-600 dark:text-slate-300 leading-relaxed text-center">
+        Happy Frame Studios specializes in wedding and pre-wedding photography and cinematography, capturing timeless
+        moments with creativity and elegance.
+      </p>
+      <div class="grid grid-cols-1 gap-3 mt-6">
+        <a class="flex items-center gap-3 p-3 bg-accent-light dark:bg-slate-800 rounded-lg text-xs text-primary dark:text-teal-400 font-medium"
+          href="mailto:contact@happyframe.com">
+          <span class="material-icons-outlined text-sm">mail</span>
+          happyframestudios@gmail.com
+        </a>
+        <a class="flex items-center gap-3 p-3 bg-accent-light dark:bg-slate-800 rounded-lg text-xs text-primary dark:text-teal-400 font-medium"
+          href="tel:+918882443557">
+          <span class="material-icons-outlined text-sm">call</span>
+          +91 8882443557
+        </a>
+        <div
+          class="flex items-center gap-3 p-3 bg-accent-light dark:bg-slate-800 rounded-lg text-xs text-primary dark:text-teal-400 font-medium text-left">
+          <span class="material-icons-outlined text-sm">location_on</span>
+          5th floor plot number, 44, Sector 44, Gurugram, Haryana 122003
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-10 px-6">
+    <div class="bg-primary/5 dark:bg-primary/10 rounded-3xl p-8 flex flex-col items-center border border-primary/10">
+      <div
+        class="relative bg-white dark:bg-white p-6 rounded-[2.5rem] shadow-xl flex flex-col items-center gap-4 border-b-[6px] border-primary/20">
+        <div class="relative p-2 bg-white rounded-2xl border-2 border-slate-50">
+          <img alt="QR Code" class="w-36 h-36"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlU2-Q1Z1SKahUJyoqSXF2x7jz_rq81UmIGdjpuVzqLMr1Z5ftxqFJF8-CLmsXY1VCfYaTD4KXhpP2PI7gTJvmk-p9OGd3yj78bPGtbk6d2_D-5KYHhzwq75dYr40pU2GFX-JREzEVpbI4C1iObFJBjHJvSzjTuM3MDbPfrcW4xmMxqcba8A5nm7AmzrQnpKS4Sp8BzG0MyINBNTMnpj8ExmTxuTnAzq6E2lkFrzTCeP9PHxdCLr0y8qTUuIUjdsi9MdTaFoiZ9Ykl" />
+          <div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-primary rounded-tl-lg"></div>
+          <div class="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-primary rounded-tr-lg"></div>
+          <div class="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-primary rounded-bl-lg"></div>
+          <div class="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-primary rounded-br-lg"></div>
+        </div>
+        <div class="flex flex-col items-center gap-1">
+          <div class="flex items-center gap-2 text-primary font-bold text-lg tracking-wide">
+            <span class="font-sans uppercase">Scan Me</span>
+          </div>
+        </div>
+      </div>
+      <p class="mt-4 text-[11px] text-slate-400 dark:text-slate-500 font-medium text-center px-4">Scan this code to save
+        our contact details directly to your phone.</p>
+    </div>
+  </section>
+  <section class="mt-12 px-6">
+    <h2
+      class="text-center font-display text-2xl font-bold text-primary dark:text-teal-400 mb-8 underline underline-offset-8 decoration-primary/30">
+      Our Services</h2>
+    <div class="grid grid-cols-2 gap-4">
+      <div
+        class="bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-800">
+        <img alt="Wedding Photography" class="w-full h-32 object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzM4o7OuXQw3nnFlcVaEXkfi_tSF08DhAqiFLuZvN0N8JudL5XewxuamGmqhJlUh674NlZaAHFCuZ7cL5AiMr163DlGEwbI0LBdT2iS7H1blYtHZYKSTO90yAUR5o7pyoVHmDyCMKSES2aO-3FEqbCdN00Hiew1iqPHmXY5JBXF3kfmU5wdBlIpgFKcTWxyPhCctSVtWRX7s5ogXEbD21BjeP_tlYVRhjdjV8OY9XBpYEL24AxX17Iel1r61BaHrQBbXjs1fCSgY38" />
+        <div class="p-3">
+          <h4 class="text-xs font-bold text-slate-800 dark:text-slate-100 mb-1">Wedding Photography</h4>
+          <p class="text-[10px] text-slate-500 leading-tight">Capturing beautiful moments with artistic precision.</p>
+        </div>
+      </div>
+      <div
+        class="bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-800">
+        <img alt="Pre-Wedding" class="w-full h-32 object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkqS4C08KI2MkaqAG5CBye-s2WgnrsigUXPq9k9ow-BRSkvR12nopexeK1B6DKcfVWPj2XW1FxE6JVyGqrlWMD52ZRyYktXfuYBtywcanwcnnelaw-uJTeZ-4iZ0AcZZzB0fdFmRcp8N3rNqQ2M2pwULSCeUTRFm1vo-5W8_bA3UNhCU8IN8unU55syo0BWdV-Yhlq2YwkqTlC_u9E5uAl93sSzFd5vgLF5Zx4mtrBcDEl7_FWRXY26p5s5DWPEgVzqAhCKb-It1Hc" />
+        <div class="p-3">
+          <h4 class="text-xs font-bold text-slate-800 dark:text-slate-100 mb-1">Pre-Wedding Photo</h4>
+          <p class="text-[10px] text-slate-500 leading-tight">Romantic and themed shoots before the big day.</p>
+        </div>
+      </div>
+      <div
+        class="bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-800">
+        <img alt="Cinematic Films" class="w-full h-32 object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvql1zhBkUm1eEOL_1AFtcCyJMVIRuAsSSztw4SZiLzlZ8JRqZYufBd-cfjlj3_zuKEMV3xGkFUDh4BP8692xWlapWtqJauuk40m5DB6nObkYTrL8dp0ozmTzygevXUOgGAbomc7cCeh1G38lARsaeEGa5i4sFLbaqClsy2LK-mbraS3UKcpOSofv8m-p4lIaEzbvcvr5vs9-3hRWM3FhWkKQ4A2ap8u9M39tiGdiK9-REi-ZDSBKFMmlxi-q_p-9VosgHt3Ijg7KP" />
+        <div class="p-3">
+          <h4 class="text-xs font-bold text-slate-800 dark:text-slate-100 mb-1">Cinematic Wedding Films</h4>
+          <p class="text-[10px] text-slate-500 leading-tight">High-quality wedding videography with storytelling.</p>
+        </div>
+      </div>
+      <div
+        class="bg-card-light dark:bg-card-dark rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-800">
+        <img alt="Drone Photography" class="w-full h-32 object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjBjgIHGgqZRXUSR0oVoV-GLr0hr0XumA_TnNUjPvdSrRBQE1Xkhsf491JaX2QGpjjwuJ70sWoNHBB5h5-iqV_oKfz6jeRGLJdHcEKr_4W02gZWNUIyc8YNOyBSrP3xW0DGvYJNuWZmumkkVxfbD8yPwJZQ8jdwjUxdmMLUmxECs9qqz-IKzQijtbidDXZW5ZxTmiwoQEEnsM1-Ih9nrz_-Wb2bPbCluf6JwT6Uo7yEatdYz1UmGefJy3o1d5O2eZ8pgslB-XzV8BZ" />
+        <div class="p-3">
+          <h4 class="text-xs font-bold text-slate-800 dark:text-slate-100 mb-1">Drone Photography</h4>
+          <p class="text-[10px] text-slate-500 leading-tight">Aerial shots for breathtaking memories.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mt-16 px-6">
+    <h2
+      class="text-center font-display text-2xl font-bold text-primary dark:text-teal-400 mb-8 underline underline-offset-8 decoration-primary/30">
+      Gallery</h2>
+    <div class="flex gap-4 overflow-x-auto no-scrollbar pb-4 -mx-6 px-6">
+      <img alt="Gallery 1" class="w-64 h-80 object-cover rounded-xl shadow-md flex-shrink-0"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT78BgM0-arhiS3_r-zXZLgqwDAHvEfravVMlDJlMIQJjayI1jNOZ792XzDtvhiV_9Z2BJxqy06n53kWmkNeWxDN-kuG0GZh1MZJ18K6dtDA8aqq1-L4gDuPPQH1mUSDPvloafLNW6TZV-u_haar-sXnjQ5FGWwYt_ytv5UQ0JDJxsR6r98_9gWMF4QH93YR5Jfewb4V5yRWu3BoZeQs8daIak1Ww-iuVuc2Vwv85LAMuN_bkQWB5KeoFFQolV1ufE26PlG_Bd5cMV" />
+      <img alt="Gallery 2" class="w-64 h-80 object-cover rounded-xl shadow-md flex-shrink-0"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-jFaCx5aRO8WitQRkZMS-gyoZTUxVlRRVUBvKqdnR-QNg1YOrLhapMEAVnb5inbci9Ua-dCwFbcjx53PbpKT3Kj4XszpIhTnFp1JdNRAJktfo9PapE_Sys0vN674HXQIhoRuKC0jmYWcqmMAOcIstxkIrFdjW_rqVX7431x9qVOY0ck87b0xqV-sOOBn3cY9STtEH6SrAZGG03h955FEjGDS7jCygD7rHs1CnuBvxGcSCDPBICQS2EQzeEJzW7Mql-Drm_HYgpNBB" />
+      <img alt="Gallery 3" class="w-64 h-80 object-cover rounded-xl shadow-md flex-shrink-0"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHdA9D3yZrYDkLK23_zv13kfbVLe39H-5UjS2Y1_ISuQrhLl_kDsMvvIQlzTqDbAUMmUvJa4jQPtHPf9rkUEUDvek2p_KlCgSiZ7qbXKZNVeArPR-xVmW_aWYGq8FgH-KRatbrIJqYel6yqDcIZXIIYwcq71dJcBoOgjGujVjV_TnkipGZmjd7hpjnp5BOR0APGTCAnSbEx1DSZ3u5RWmgsypyG33NWC-4jR0EThj7Hjpqb3ODVJZ0GIShhZPtSLdScLu2ixAmzV5d" />
+    </div>
+    <div class="flex justify-center gap-1.5 mt-4">
+      <div class="w-2 h-2 rounded-full bg-primary"></div>
+      <div class="w-2 h-2 rounded-full bg-slate-300 dark:bg-slate-600"></div>
+      <div class="w-2 h-2 rounded-full bg-slate-300 dark:bg-slate-600"></div>
+    </div>
+  </section>
+  <section class="mt-16 px-6">
+    <h2
+      class="text-center font-display text-2xl font-bold text-primary dark:text-teal-400 mb-8 underline underline-offset-8 decoration-primary/30">
+      Testimonials</h2>
+    <div class="grid grid-cols-1 gap-6">
+      <div
+        class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm relative">
+        <div
+          class="absolute -top-4 left-6 w-10 h-10 rounded-full overflow-hidden border-2 border-white dark:border-slate-700 shadow-md">
+          <img alt="Priya" class="w-full h-full object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmplFoMvxWuHG29GkWbdYuLw8aNmcbTB_pd-9QvIWZLl36wplehJ2qP_mHVyZHwUYjdC1kPyMiK5AdcN9849S0f-Q8ETZTfiJvJfBTTBgwd8PeGYH637wCaVK5wfBu-MStLPB5bXxvxDpHOrjt4I5Iairvov0zoykH3pmr6K7JcJcD5c_yuOcReT9ZL9Wbc1-Tn1obV4wslVQA6dRd2DbLoDQpBpiG2qjFUV4Ah9vrXlpS6eWCRHR2Iddow1dg3-wycbVGzyCC7DVp" />
+        </div>
+        <p class="text-sm italic text-slate-600 dark:text-slate-300 pt-2">"Happy Frame Studios made our wedding day
+          magical! Every picture was breathtaking, and the video was like a movie. Highly recommended!"</p>
+        <div class="mt-4 text-xs font-bold text-primary dark:text-teal-400 text-right">— Priya</div>
+      </div>
+      <div
+        class="bg-card-light dark:bg-card-dark p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm relative">
+        <div
+          class="absolute -top-4 left-6 w-10 h-10 rounded-full overflow-hidden border-2 border-white dark:border-slate-700 shadow-md">
+          <img alt="Rahul" class="w-full h-full object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrY5vITfbJsFYppG4emAnoaZwkhfiIn6kyUZ81AIwd8Ob0MaGKsd1WmQhnd0d4fZBM6yDhtu51orCHNggtXEbzDbcRcOcik0Ki96UDwQQlxz86CT93w9JgbODJMjvXyxgp0ScyT9Bcw7pU895JO1bLOf927Xu3VOQKQXWUMY0ETA3C36shyPINCc5vFlZJ2yZ_RP7xCgqwv6OS07vcf4FyR90xi_qcDMKtaDDRzp6Z41nN1NKYltfc2P1WeKYWaKyKoqmL5WubuaIS" />
+        </div>
+        <p class="text-sm italic text-slate-600 dark:text-slate-300 pt-2">"We loved our pre-wedding shoot! The team was
+          professional, friendly, and made us feel comfortable. The results were stunning!"</p>
+        <div class="mt-4 text-xs font-bold text-primary dark:text-teal-400 text-right">— Rahul</div>
+      </div>
+    </div>
+  </section>
+  <section class="mt-16 px-6">
+    <h2
+      class="text-center font-display text-2xl font-bold text-primary dark:text-teal-400 mb-8 underline underline-offset-8 decoration-primary/30">
+      Instagram Feed</h2>
+    <div class="flex justify-center gap-12 mb-6 border-b border-slate-200 dark:border-slate-700 pb-2">
+      <span class="material-icons-outlined text-primary cursor-pointer">grid_on</span>
+      <span class="material-icons-outlined text-slate-400 cursor-pointer">assignment_ind</span>
+    </div>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="space-y-4">
+        <div
+          class="bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+          <div class="flex items-center gap-2 p-2">
+            <div class="w-5 h-5 rounded-full bg-slate-200"></div>
+            <span class="text-[9px] font-bold">happyframestudios</span>
+          </div>
+          <img alt="Insta 1" class="w-full aspect-square object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFC6-lp72Ec6E5S-H47jKsP6D4b1v1RrV0h6lTpUQK6gljpXRdyXPg0n6ysfPk2cLGmZx4op_sOhHPOaUTGvW8rbdvw3kBVxgpc2SgH1l3z7XcvlsqN-35xxtL8A48yzbAQbIs3mebyk9djGw9HfhoX9GcIorPJNlrWcy77VtLPU8QMvoCjo-OKVOj-Rekcs_gDhM01NBwsrdrQ8M4U07aJBOnLeoKp_gWk_Dai7Zu7r-qhRoFldgzht0NKjlCuiWBq24IruBNOpe8" />
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div
+          class="bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+          <div class="flex items-center gap-2 p-2">
+            <div class="w-5 h-5 rounded-full bg-slate-200"></div>
+            <span class="text-[9px] font-bold">happyframestudios</span>
+          </div>
+          <img alt="Insta 2" class="w-full aspect-square object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdiBVIty6TMj9zqcbR65herrXOC1_cfMzFXMc_uR4n7JdqsBE5AM8J_lT4ju0cz9oD-n9DXyzmgF6w5r5eAb1b7Cf1-IFlAPjZbkN4DH6EQ8uj-6NlDk1jCxuDkCPdK7RK1oOjLCkzknSOmmPC-qRhc7Ofk6mRTE9OOPJHCVQ2V1gztpDIrJbgPZQ0xcLb4Ch3tDDeAdRRA-bPBLfwNLmdA9rSPaxhVMRd5VjzY-oEgUh_J-XtWXDtDB9Te-dSAU4VEx4ULtaMMvNt" />
+        </div>
+      </div>
+    </div>
+    <div class="mt-6 text-center">
+      <button
+        class="px-6 py-2 border border-primary text-primary dark:text-teal-400 rounded-full text-xs font-semibold hover:bg-primary hover:text-white transition-colors">
+        View more on Instagram
+      </button>
+    </div>
+  </section>
+  <section class="mt-16 px-6">
+    <h2
+      class="text-center font-display text-2xl font-bold text-primary dark:text-teal-400 mb-8 underline underline-offset-8 decoration-primary/30">
+      Business Hours</h2>
+    <div class="space-y-3">
+      <div
+        class="flex items-center justify-between p-4 bg-white dark:bg-card-dark rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded bg-primary/10 flex items-center justify-center text-primary dark:text-teal-400">
+            <span class="material-icons-outlined text-sm">calendar_month</span>
+          </div>
+          <span class="text-sm font-medium">Monday</span>
+        </div>
+        <span class="text-xs text-slate-500">09:00 AM - 07:00 PM</span>
+      </div>
+      <div
+        class="flex items-center justify-between p-4 bg-white dark:bg-card-dark rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded bg-primary/10 flex items-center justify-center text-primary dark:text-teal-400">
+            <span class="material-icons-outlined text-sm">calendar_month</span>
+          </div>
+          <span class="text-sm font-medium">Tuesday</span>
+        </div>
+        <span class="text-xs text-slate-500">09:00 AM - 07:00 PM</span>
+      </div>
+      <div
+        class="flex items-center justify-between p-4 bg-white dark:bg-card-dark rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded bg-primary/10 flex items-center justify-center text-primary dark:text-teal-400">
+            <span class="material-icons-outlined text-sm">calendar_month</span>
+          </div>
+          <span class="text-sm font-medium">Wednesday</span>
+        </div>
+        <span class="text-xs text-slate-500">09:00 AM - 07:00 PM</span>
+      </div>
+      <div
+        class="flex items-center justify-between p-4 bg-white dark:bg-card-dark rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm border-2 border-primary/20">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded bg-primary flex items-center justify-center text-white">
+            <span class="material-icons-outlined text-sm">calendar_month</span>
+          </div>
+          <span class="text-sm font-bold">Thursday (Today)</span>
+        </div>
+        <span class="text-xs font-bold text-primary">09:00 AM - 07:00 PM</span>
+      </div>
+    </div>
+  </section>
+  <section class="mt-16 px-6">
+    <h2
+      class="text-center font-display text-2xl font-bold text-primary dark:text-teal-400 mb-8 underline underline-offset-8 decoration-primary/30">
+      Make an Appointment</h2>
+    <form class="space-y-4">
+      <input
+        class="w-full px-4 py-3 rounded-xl border-slate-200 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-sm"
+        placeholder="Your Name" type="text" />
+      <input
+        class="w-full px-4 py-3 rounded-xl border-slate-200 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-sm"
+        placeholder="Email Address" type="email" />
+      <input
+        class="w-full px-4 py-3 rounded-xl border-slate-200 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-sm"
+        placeholder="Enter Phone" type="tel" />
+      <div
+        class="bg-card-light dark:bg-card-dark p-6 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800">
+        <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-700 pb-3 mb-4">
+          <span class="text-sm font-medium">Date</span>
+          <div
+            class="flex items-center gap-2 bg-accent-light dark:bg-slate-700 px-3 py-1.5 rounded-lg text-xs text-slate-500">
+            Pick a Date <span class="material-icons-outlined text-sm">calendar_today</span>
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-medium">Hour</span>
+          <div
+            class="flex items-center gap-2 bg-accent-light dark:bg-slate-700 px-3 py-1.5 rounded-lg text-xs text-slate-500">
+            Select Time <span class="material-icons-outlined text-sm">schedule</span>
+          </div>
+        </div>
+      </div>
+      <button
+        class="w-full bg-primary py-3 rounded-xl text-white font-bold text-sm shadow-md hover:opacity-90 transition-opacity">
+        Book Appointment
+      </button>
+    </form>
+  </section>
+  <section class="mt-16 px-6">
+    <h2
+      class="text-center font-display text-2xl font-bold text-primary dark:text-teal-400 mb-8 underline underline-offset-8 decoration-primary/30">
+      Iframes</h2>
+    <div class="rounded-2xl overflow-hidden shadow-lg aspect-video bg-black relative">
+      <img alt="Youtube video preview" class="w-full h-full object-cover"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUKxSQHznKBXe-TBCCjZwwJImB3UexIwyyKVwioI9ffok2DZWhHILzTI64owlfDnVskZ1BD1QLZS65z_mWb4rigBT_iaCIb7oLKfyZee5xeKvcxzfWzN5YXg_x2onyKpqaHJSh2m6FI7BwgeNniGFSAbAkuuOE0TbaBscZHTHKJRwtWWd92XjkmD8NX1ZI2R2P_8AT3E3DXKJ6CTl67ltQG9kFPB7sCIjN0mYy6SsVvgFkguCzVE0nU5c9veSyCTabPyURo30Myv8B" />
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="bg-red-600 w-12 h-8 rounded-lg flex items-center justify-center text-white">
+          <span class="material-icons-outlined">play_arrow</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mt-16 px-6 pb-20">
+    <h2
+      class="text-center font-display text-2xl font-bold text-primary dark:text-teal-400 mb-8 underline underline-offset-8 decoration-primary/30">
+      Inquiries</h2>
+    <form class="space-y-4">
+      <input
+        class="w-full px-4 py-3 rounded-xl border-slate-200 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-sm"
+        placeholder="Your Name" type="text" />
+      <input
+        class="w-full px-4 py-3 rounded-xl border-slate-200 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-sm"
+        placeholder="Email Address" type="email" />
+      <input
+        class="w-full px-4 py-3 rounded-xl border-slate-200 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-sm"
+        placeholder="Enter Phone" type="tel" />
+      <textarea
+        class="w-full px-4 py-3 rounded-xl border-slate-200 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-sm"
+        placeholder="Type a message here..." rows="4"></textarea>
+      <button
+        class="w-full bg-primary py-3 rounded-xl text-white font-bold text-sm shadow-md hover:opacity-90 transition-opacity">
+        Send Message
+      </button>
+    </form>
+    <div
+      class="mt-12 p-4 bg-accent-light dark:bg-slate-800 rounded-xl border-dashed border-2 border-primary/30 text-center">
+      <h4 class="text-xs font-bold text-primary dark:text-teal-400 mb-2">Create Your vCard</h4>
+      <p class="text-[10px] text-slate-500 mb-3">https://profile.call2growth.com/register?referral-code=LQ9ZMN8V9I</p>
+      <span class="material-icons-outlined text-sm text-primary">content_copy</span>
+    </div>
+    <div
+      class="mt-8 rounded-2xl overflow-hidden h-40 border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-100 dark:bg-slate-900 flex items-center justify-center">
+      <div class="text-center">
+        <span class="material-icons-outlined text-primary text-3xl mb-1">map</span>
+        <p class="text-[10px] text-slate-500">Sector 44, Gurugram, Haryana</p>
+      </div>
+    </div>
+    <button
+      class="w-full mt-6 bg-primary py-4 rounded-xl text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg">
+      <span class="material-icons-outlined text-lg">person_add</span>
+      Add to contact
+    </button>
+    <p class="text-center text-[10px] text-slate-400 mt-10 pb-6 uppercase tracking-widest">Made By call2growth.com</p>
+  </section>
+
+  <div
+    class="fixed bottom-6 left-0 right-0 mx-auto max-w-[430px] w-full flex justify-end px-6 z-50 pointer-events-none">
+    <button
+      class="w-14 h-14 bg-primary text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform pointer-events-auto focus:outline-none focus:ring-4 focus:ring-primary/30">
+      <span class="material-icons-outlined text-3xl">add</span>
+    </button>
+  </div>
+</body>
+
+</html>

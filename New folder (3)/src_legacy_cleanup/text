@@ -1,0 +1,68 @@
+# Seller Features Guide
+
+This document defines the capabilities available to a **Seller** when logged into the dashboard.
+
+## Visual Dashboard Map
+
+A quick overview of what you can control:
+
+```mermaid
+graph LR
+    User((Seller)) --> Auth[Authentication]
+    Auth --> Reg[Registration]
+    Reg -->|Pre-fills| Dash[Dashboard]
+    
+    subgraph Dashboard_Features
+        direction TB
+        Profile[Profile & Contact]
+        Content[Content & Catalog]
+        Adv[Advanced & Reset]
+    end
+    
+    Dash --> Profile
+    Dash --> Content
+    Dash --> Adv
+    
+    Profile --> Loc[Location Logic]
+    Loc -->|Link| ExtMap[External Map App]
+    Loc -->|Embed| VisMap[Visual Map Box]
+    
+    Adv --> Reset[Reset Shop / Hours]
+```
+
+## 1. Profile & Contact Management
+Manage the core identity or "Face" of the shop.
+
+- **Registration Flow**: New users can enter Shop Name, Phone, and Map Link during sign-up. These details **automatically pre-fill** the dashboard.
+- **Shop Info**: Edit Shop Name, Owner Name, Tagline, and Description.
+- **Branding**: Upload a Banner image/video and a Logo.
+- **Contact Details**: 
+  - **Phone/WhatsApp**: Defaults to `+91` prefix. Includes "Same as Phone" toggle.
+  - **Location Manager**: Consolidates 3 location features:
+    1.  **Address**: Text display.
+    2.  **Location Link**: Powers "Directions" buttons (with coordinate extraction).
+    3.  **Visual Map Source**: Embed code for exact map display.
+- **Business Hours**: Set opening/closing times. Includes "Reset Hours" button.
+- **Social Links**: Add links to Instagram, Facebook, YouTube, etc.
+
+## 2. Content Management
+Manage what you sell and show.
+
+- **Categories**: Organize products (e.g., "Men", "Women").
+- **Gallery**: Upload image collections.
+- **Products**: Manage items with prices and images.
+  - **PDF Catalog**: Generate a downloadable PDF price list.
+- **Services**: List offered services.
+- **Testimonials & FAQ**: Manage customer trust content.
+- **Social Embeds**: Show live feeds from Instagram/YouTube.
+
+## 3. Advanced & Danger Zone
+Technical controls for power users.
+
+- **Analytics**: View Views, Clicks, and CTR (Click Through Rate).
+- **SEO Settings**: Customize Meta Title/Description for Google.
+- **Custom Code**: Inject CSS/JS.
+- **Danger Zone**:
+  - **Reset Shop**: Clears all content to default (keeps your account).
+  - **Delete Account**: Permanently removes everything.
+
